@@ -1,0 +1,3 @@
+# node-chat-app
+chat-app 
+It's a training and I don't think it's very usefull for you...
