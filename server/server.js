@@ -16,9 +16,9 @@ io.on('connection',(socket)=>{
   console.log('user connected');
 
   //socket.emit from admin  to the new user
-  //socket.emit('newMessage',generateMessage('Admin','welcome to the chat'));
+  socket.emit('newMessage',generateMessage('Admin','welcome to the chat'));
   //socket.broadcast from admin to the other onces annoucing the new user
-  //socket.broadcast.emit('newMessage',generateMessage('Admin','New user joined'));
+  socket.broadcast.emit('newMessage',generateMessage('Admin','New user joined'));
 
   socket.on('createMessage',(message,callback)=>{
     console.log('createMessage', message);
